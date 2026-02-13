@@ -38,7 +38,6 @@ app.post("/tx/encrypt", async (request, reply) => {
     const record = encryptTransaction(
       body.partyId,
       body.payload,
-      MASTER_KEY
     );
 
     store.set(record.id, record);
@@ -77,7 +76,7 @@ app.post("/tx/:id/decrypt", async (request, reply) => {
       return reply.status(404).send({ error: "Not found" });
     }
 
-    const decrypted = decryptTransaction(record, MASTER_KEY);
+    const decrypted = decryptTransaction(record);
 
     return { decryptedPayload: decrypted };
   } catch (err: any) {

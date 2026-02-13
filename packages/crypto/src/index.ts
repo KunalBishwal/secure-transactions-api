@@ -1,4 +1,8 @@
-export * from "./types";
-export * from "./encryption";
-export * from "./utils";
-export * from "./tx";
+export {
+  encryptTransaction,
+  decryptTransaction
+} from "./encryption";
+
+export type {
+  TxSecureRecord
+} from "./types";

@@ -2,7 +2,7 @@
   "name": "mirfa-secure-tx",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
+    "build": "turbo run build --no-daemon",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
