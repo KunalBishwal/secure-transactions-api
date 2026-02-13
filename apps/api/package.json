@@ -1,15 +1,10 @@
 {
   "name": "api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "type": "commonjs",
   "scripts": {
-    "dev": "ts-node-dev index.ts",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@fastify/cors": "^11.2.0",
     "@mirfa/crypto": "workspace:*",
@@ -17,9 +12,8 @@
     "fastify": "^5.7.4"
   },
   "devDependencies": {
-    "@types/node": "^20.19.33",
+    "@types/node": "^20",
     "@vercel/node": "^5.6.3",
-    "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.3"
   }
 }
