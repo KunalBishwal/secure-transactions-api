@@ -1,12 +1,10 @@
 {
   "name": "@mirfa/crypto",
   "version": "1.0.0",
-  "main": "dist/encryption.js",
-  "types": "dist/encryption.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "build": "tsc"
-  },
-  "devDependencies": {
-    "@types/node": "^25.2.3"
   }
 }
